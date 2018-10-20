@@ -60,6 +60,54 @@
         <div class="large-3 columns">
           <div class="callout">
             <h4>Busqueda Avanzada</h4>
+            <form>
+              <div class="row column">
+                <label>Por Nombre:</label>
+                <input type="text" id="PorNombre"/>
+              </div>
+              <div class="row column">
+                <label>Por Referencia:</label>
+                <input type="text" required aria-describeDbt="ayudatexto"/>
+                <p class="help-text" id="ayudatexto">Numero unico de producto</p>
+              </div>
+              <div>
+                <label>Por Categoria:</label>
+                <select name="categorias" id="porcategoria">
+                  <option value="1">Hogar</option>
+                  <option value="2">Salud</option>
+                  <option value="3">Deporte</option>
+                  <option value="4">Tecnologia</option>
+                  <option value="5">Accesorios</option>
+                  <option value="6">Ropa</option>
+                  <option value="7">Mantenimiento</option>
+                </select>
+              </div>
+              <div class="row column">
+                <label>Tipo de Producto:</label>
+                <input type="checkbox" id="nuevo"><label for="checkbox1">Nuevo</label>
+                <input type="checkbox" id="usado"><label for="checkbox2">Usado</label>
+              </div>
+              <div class="row column">
+                <label>Tipo de Precio:</label>
+                <input type="radio" name="precio" id="pleno"><label for="pleno">Pleno</label>
+                <input type="radio" name="precio" id="oferta"><label for"oferta">En Oferta</label>
+              </div>
+              <div class="row column text-center">
+                <label>¿Buscar productos agotados?</label>
+                <div class="switch medium">
+                  <input class="switch-input" id="agotados-switch" type="checkbox">
+                  <label class="switch-paddle" for="agotados-switch">
+                    <span class="switch-active" aria-hidden="true">Si</span>
+                    <span class="switch-inactive" aria-hidden="true">No</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="row column text-center">
+                <hr>
+                <button type="submit" name="enviar" class="button">Buscar <i class="step fi-magnifying-glass"></i></button>
+              </div>
+          </form>
           </div>
         </div>
         <div class="columns large-9">
