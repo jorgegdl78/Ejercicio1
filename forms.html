@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta  charset="utf-8">
+      <meta name="viewport" content="width:device-width,user-scalable=no">
+      <title>Ejemplo de Foundation</title>
+      <link rel="stylesheet" href="css/foundation.min.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="foundation-icons/foundation-icons.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+      <div class="row">
+        <div class="columns">
+          <h1>Formulario</h1>
+        </div>
+      </div>
+    <form>
+      <div class="row small-stack medium-unstack">
+        <div class="columns">
+          <label>Texto
+            <input type="text" placeholder="Texto" required aria-describeDbt="ayudatexto">
+          </label>
+          <p class="help-text" id="ayudatexto">Aqui debes llenar con un texto cualquiera</p>
+          <label>Fecha
+            <input type="date" required/>
+          </label>
+          <label>Fecha y Hora
+            <input type="datetime-local"/>
+          </label>
+          <label>Email
+            <input type="email" placeholder="Email" required/>
+          </label>
+          <label>Mes
+            <input type="month" required/>
+          </label>
+          <label>Numero
+            <input type="number" placeholder="Numero"/>
+          </label>
+          <div class="row">
+          <div class="columns">
+            <fieldset class="fieldset">
+              <legend>Radio Button</legend>
+              <input type="radio" name="color" value="Rojo" id="Rojo" required><label for="Rojo">Rojo</label>
+              <input type="radio" name="color" value="Azul" id="Azul"><label for="Azul">Rojo</label>
+            </fieldset>
+          </div>
+          <div class="columns">
+            <fieldset class="fieldset">
+              <legend>Checkbox</legend>
+              <input type="checkbox" id="Verde"><label for="checkbox1">Verde</label>
+              <input type="checkbox" id="Morado"><label for="checkbox2">Morado</label>
+            </fieldset>
+          </div>
+        </div>
+        <input type="submit" class="button float-right"/>
+      </div>
+      <div class="columns">
+        <label>Contraseña
+          <input type="password" placeholder="contraseña"/>
+        </label>
+        <label>Telefono
+          <input type="tel" placeholder="Telefono"/>
+        </label>
+        <label>Tiempo
+          <input type="time"/>
+        </label>
+        <label>Url
+          <input type="url"/>
+        </label>
+        <label>Semana
+          <input type="week"/>
+        </label>
+        <label>Texto largo
+          <textarea name="textolargo" rows="8" cols="40">Insertar texto largo</textarea>
+        </label>
+      </div>
+    </div>
+    </form>
+  </body>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+  </body>
+</html>
